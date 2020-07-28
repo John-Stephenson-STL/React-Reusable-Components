@@ -1,23 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+// const helloWorld = <div>A Generic HelloWorld Text!</div>;
+// const message = props => <div>{props.msg}</div>;
+const Message = props => <div>{props.msg}</div>;
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* {helloWorld} */}
+        {/* Part 2 */}
+        {/* {message({msg: 'A Generic Hello World Text'})}
+        {message({msg: 'Creating Reusable React Components'})} */}
+        {/* PART 3
+        {React.createElement(message, {msg: 'A Generic Hello World Text'})}
+        {React.createElement(message, {
+          msg: 'Creating Reusable React Components',
+        })} */}
+        <Message msg="A Generic Hello World Text" />
+        <Message msg="Creating Reusable React Components" />
       </header>
     </div>
   );
